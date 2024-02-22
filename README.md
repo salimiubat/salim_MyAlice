@@ -1,6 +1,6 @@
 create env,
-install requirements.txt
+install requirements.txt,
 makemigrations,
-migrate
-createsuperuser
+migrate,
+createsuperuser,
 then run server

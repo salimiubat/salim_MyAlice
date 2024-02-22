@@ -31,7 +31,7 @@ class UserViewSet(viewsets.ModelViewSet):
         refresh = RefreshToken.for_user(create_user)
         
         return Response({
-            'message': 'User and Superuser created successfully',
+            'message': 'User and Superuser Created Successfully',
             'refresh': str(refresh),
             'access': str(refresh.access_token),
         }, status=status.HTTP_201_CREATED)
